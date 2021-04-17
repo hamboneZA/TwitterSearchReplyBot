@@ -100,3 +100,6 @@ for result in results:
         time.sleep(5)
 	# So, we wait X seconds before searching for replying to the next tweet
 
+# The IDs of the tweets replied to are in ids_replied_to.txt. If you wanted more
+# like the tweet itaself recorded you could use tee to send stdin to logs. Mess.
+
