@@ -1,11 +1,11 @@
 #  TwitterSearchReplyBot
 
-Python script to search Twitter for a phrase / hashtag / whatever and reply to a returned result with random pre-defined phrases. I did this on Ubuntu 16.04, but Python anywhere would work, I guess. I stupidly screwed up Pythion versions - don't make my mistake and install it properly.
+Python script to search Twitter for a phrase / hashtag / whatever and reply to a returned result with random pre-defined phrases. I did this on Ubuntu 16.04, but Python anywhere would work, I guess. I stupidly screwed up my Python versions - don't make my mistake and install it properly or use a suitable venv.
 
 ## Prerequisites
 
 - Python (3.6+)
-- Twython </list>
+- Twython
 
 ### Install
 
@@ -25,7 +25,7 @@ And install...
 <code>sudo apt install Installpython3.8 && sudo apt install pip3 -y</code>
 
 
-Do python -- version again and check if the new version was installed. If you had python 2 installed previously it might show that old version because we've not updated .env. in which case check the Python 3 version using python3 --version.
+Do <code>python -- version</code> again and check if the new version was installed. If you had python 2 installed previously it might show that old version because we've not updated .env. in which case check the Python 3 version using python3 --version and use <code>$ python3 ... </code> if you're lazy and don't want to set things up as they should be.
 
 ## Tywthon
 
