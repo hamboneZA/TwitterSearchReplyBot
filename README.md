@@ -15,10 +15,10 @@ Python script to search Twitter for a phrase / hashtag / whatever and reply to a
 
 If nothing is returned or version is lower than 3.6 add a new repo (this repo is usually more current than official):
 
-<code>sudo apt update <br>
+<block>sudo apt update <br>
 sudo apt install software-properties-common <br>
 sudo add-apt-repository ppa:deadsnakes/ppa  <br>
-sudo apt update</code>
+sudo apt update</block>
 
 And install...
 
@@ -43,7 +43,7 @@ either <code>pip install twython</code> or <code>pip3 install twython</code> (de
 
 #### Auth Params
 
-Append the Twitter API credentials to auth.py:
+Append the Twitter API credentials to auth.py (there's some guidance in in the file):
 
 <code>nano auth.py</code>
 
