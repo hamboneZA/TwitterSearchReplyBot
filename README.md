@@ -32,7 +32,7 @@ either <code>pip install twython</code> or <code>pip3 install twython</code> (de
 
     pip install twython
 
-## Twitter_Auto_Reply
+## TwitterSearchReplyBot
 
 <code>git clone https://github.com/hamboneZA/TwitterSearchReplyBot.git</code>
 
