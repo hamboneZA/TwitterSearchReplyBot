@@ -31,33 +31,30 @@ Do python -- version again and check if the new version was installed. If you ha
 
 Install using pip
 
-either <code>pip install twython</code> or <code>pip3 install twython</> (depending on the situation as described above).
+either <code>pip install twython</code> or <code>pip3 install twython</code> (depending on the situation as described above).
 
-<code>pip install twython<code>  # if python --version returns v3 +
-  <code>pip3 install twython</code>
-
+<code>pip install twython</code>
 
 ## Twitter_Auto_Reply
 
-TODO: Move to github repo
+<i>TODO: Move to github repo</i>
 
-git clone https://box.keepwalking.life/cloud/index.php/s/HWRggWbDa4DxpR2
+<code>git clone https://github.com/hamboneZA/TwitterSearchReplyBot.git</code>
 
-Auth Params
+#### Auth Params
 
 Append the Twitter API credentials to auth.py:
 
-nano auth.py
+<code>nano auth.py</code>
 
+#### Define Responses
 
-Define Responses
-
-TODO: a responses.txt so adding replies is less technical.
+<i>TODO: a responses.txt so adding replies is less technical.</i>
 
 Add all the possible responses to twitter_app.py
 
-#These are the tweets the bot can send
-rand_message = ['Did you mean "unpredictable?"', 'Did you mean "inconsistent"?', 'Did you mean "temperamental"?', 'Did you mean "unreliable"?',]
+<code>nano twitter_app.py</code>
+<code/>rand_message = ['Did you mean "unpredictable?"', 'Did you mean "inconsistent"?', 'Did you mean "temperamental"?', 'Did you mean "unreliable"?',]</code>
 
 
 Responses should be surrounded by single-quotes and separated by a comma. If a literal single-quote is expected to print in the reply it should be escaped like \'. The final response must be followed by a comma. All replies must be surrounded by [ ].
@@ -66,12 +63,6 @@ Responses should be surrounded by single-quotes and separated by a comma. If a l
 
 Run the script and enter the search terms when prompted.
 
-python3 twitter_app.py 
+<code>python twitter_app.py</code>
 
-
-or
-
-python twitetr_app.py
-
-
-Script will search every 5 seconds and reply with one of the random phrases set until it is stopped with a Ctrl+C interrupt.
+You may need to make the file executable, so do <code>sudo chmod -x twitter_app.py</code> Script will search every 5 seconds and reply with one of the random phrases set until it is stopped with a Ctrl+C interrupt.
