@@ -48,10 +48,11 @@ Append the Twitter API credentials to auth.py (there's some guidance in in the f
 
 Add all the possible responses to twitter_app.py
 
-    nano twitter_app.py<br>
+    nano twitter_app.py
     rand_message = ['Did you mean "unpredictable?"', 'Did you mean "inconsistent"?', 'Did you mean "temperamental"?', 'Did you mean "unreliable"?',]
 
-Responses should be surrounded by single-quotes and separated by a comma. If a literal single-quote is expected to print in the reply it should be escaped like \'. The final response must be followed by a comma. All replies must be surrounded by [ ].
+Responses should be surrounded by single-quotes and separated by a comma. 
+If a literal single-quote is expected to print in the reply it should be escaped like \'. <b>The final response must be followed by a comma. All replies must be surrounded by [ ].</b>
 
 .... Done!
 
@@ -61,7 +62,9 @@ Run the script and enter the search terms when prompted.
 
 <code>python twitter_app.py</code>
 
-You may need to make the file executable, so do <code>sudo chmod -x twitter_app.py</code> Script will search every 5 seconds and reply with one of the random phrases set until it is stopped with a Ctrl+C interrupt.
+You may need to make the file executable, if so do <code>sudo chmod -x twitter_app.py</code>. Until stopped this will search every 5 seconds and reply with one of the random phrases set until killed with a Ctrl+C interrupt.
+
+## Todo
 
 - [x] Change search input to behave with advanced search API.
 - [x] Add requirements.txt for automated dependencies installation and ... 
