@@ -46,16 +46,16 @@ with open('ids_replied_to.txt', 'r') as filehandle:
 # could use an advanced search too, I think.
 print('')
 print('')
-search_term = input('What word should I look for? ')
+search_term = input('Find what? ')
 
 results = twitter.cursor(twitter.search, q=search_term)
 
 print('')
-print('Searching Twitter...')
+print('Finding that now....')
 print('')
 
 # These are the tweets the bot can send
-rand_message = ['I am a auto tweet bot', 'Twitter is great', 'Tweet Tweet', 'I auto reply to Tweets and I was created in Python',]
+rand_message = ['REPLY 1', 'REPLY 2', 'etc...',]
 
 for result in results:
 
@@ -90,7 +90,7 @@ for result in results:
         twitter.update_status(status=message, in_reply_to_status_id=id)
         print("Tweeted: %s" % message)
 	# The reply has been sent, now we make a record that we replied so we 
-	# don't reply to our own tweet (or the one we replied to again).
+	# don't reply to our own tweet (or the one we replied to, again).
         id = int(id)
         ids_replied_to.append(id)
         with open('ids_replied_to.txt', 'w') as filehandle:
