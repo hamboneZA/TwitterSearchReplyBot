@@ -67,7 +67,8 @@ You may need to make the file executable, if so do <code>sudo chmod -x twitter_a
 ## Todo
 
 - [x] Change search input to behave with advanced search API.
-- [x] Add requirements.txt for automated dependencies installation and ... 
+- [ ] A single phrases.py to add possible replies and API keys.
+- [ ] Add requirements.txt for automated dependencies installation and ... 
 - [ ] Make initial setup script to populate auth.py, phrases.py and wait.py
 - [ ] Expect -- [param] arguments to run as an unattended bot (in a detched tmux / something).
 
