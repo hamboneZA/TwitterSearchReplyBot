@@ -7,9 +7,7 @@ Python script to search Twitter for a phrase / hashtag / whatever and reply to a
 - Python (3.6+)
 - Twython
 
-### Install
-
-#### Python 3 and pip
+### Python 3 and pip
 
 <code>python ––version</code>
 
@@ -22,12 +20,11 @@ sudo apt update</block>
 
 And install...
 
-<code>sudo apt install Installpython3.8 && sudo apt install pip3 -y</code>
-
+<code>sudo apt install python3 && sudo apt install pip3 -y</code>
 
 Do <code>python -- version</code> again and check if the new version was installed. If you had python 2 installed previously it might show that old version because we've not updated .env. in which case check the Python 3 version using python3 --version and use <code>$ python3 ... </code> if you're lazy and don't want to set things up as they should be.
 
-## Tywthon
+### Tywthon
 
 Install using pip
 
@@ -60,6 +57,8 @@ Add all the possible responses to twitter_app.py
 Responses should be surrounded by single-quotes and separated by a comma. If a literal single-quote is expected to print in the reply it should be escaped like \'. The final response must be followed by a comma. All replies must be surrounded by [ ].
 
 .... Done!
+
+#### And Go!
 
 Run the script and enter the search terms when prompted.
 
