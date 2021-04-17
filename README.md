@@ -1,48 +1,43 @@
-Twitter Search and Reply
+#  TwitterSearchReplyBot
 
-Python script to search Twitter for a phrase / hashtag / whatever and reply to a returned result with random pre-defined phrases.
+Python script to search Twitter for a phrase / hashtag / whatever and reply to a returned result with random pre-defined phrases. I did this on Ubuntu 16.04, but Python anywhere would work, I guess. I stupidly screwed up Pythion versions - don't make my mistake and install it properly.
 
-Prerequisites
+## Prerequisites
 
-git - to clone this repo (you can fetch it in other ways, of course)
+- Python (3.6+)
+- Twython </list>
 
-python3
+### Install
 
-Twython
+#### Python 3 and pip
 
-Install
-
-Python 3 and pip
-
-python ––version
-
+<code>python ––version</code>
 
 If nothing is returned or version is lower than 3.6 add a new repo (this repo is usually more current than official):
 
-sudo apt update 
-sudo apt install software-properties-common 
-sudo add-apt-repository ppa:deadsnakes/ppa 
-sudo apt update
-
+<code>sudo apt update <br>
+sudo apt install software-properties-common <br>
+sudo add-apt-repository ppa:deadsnakes/ppa  <br>
+sudo apt update</code>
 
 And install...
 
-sudo apt install Installpython3.8 && sudo apt install pip3 -y
+<code>sudo apt install Installpython3.8 && sudo apt install pip3 -y</code>
 
 
 Do python -- version again and check if the new version was installed. If you had python 2 installed previously it might show that old version because we've not updated .env. in which case check the Python 3 version using python3 --version.
 
-Tywthon
+## Tywthon
 
 Install using pip
 
-either pip install twython or pip3 install twython (depending on the situation as described above).
+either <code>pip install twython</code> or <code>pip3 install twython</> (depending on the situation as described above).
 
-pip install twython   # if python --version returns v3 +
-pip3 install twython
+<code>pip install twython<code>  # if python --version returns v3 +
+  <code>pip3 install twython</code>
 
 
-Twitter_Auto_Reply
+## Twitter_Auto_Reply
 
 TODO: Move to github repo
 
@@ -79,4 +74,4 @@ or
 python twitetr_app.py
 
 
-Script will search every 15 seconds and reply with one of the random phrases set until it is stopped with a Ctrl+C interrupt.
+Script will search every 5 seconds and reply with one of the random phrases set until it is stopped with a Ctrl+C interrupt.
