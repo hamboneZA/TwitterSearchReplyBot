@@ -50,8 +50,8 @@ Append the Twitter API credentials to auth.py (there's some guidance in in the f
 
 Add all the possible responses to twitter_app.py
 
-<code>nano twitter_app.py</code>
-<code/>rand_message = ['Did you mean "unpredictable?"', 'Did you mean "inconsistent"?', 'Did you mean "temperamental"?', 'Did you mean "unreliable"?',]</code>
+<block>nano twitter_app.py
+rand_message = ['Did you mean "unpredictable?"', 'Did you mean "inconsistent"?', 'Did you mean "temperamental"?', 'Did you mean "unreliable"?',]</block>
 
 
 Responses should be surrounded by single-quotes and separated by a comma. If a literal single-quote is expected to print in the reply it should be escaped like \'. The final response must be followed by a comma. All replies must be surrounded by [ ].
